@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="" name="description">
+    <meta charset="utf-8">
+
+    <!--    quotes carousel imports-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/jquery-2.2.3.js"></script>
+    <script src="js/quiz.js"></script>
+
+
+    <title>100% Brisbane</title>
+    <!-- Link to Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400,700" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script type="text/javascript" src="js/scroll.js"></script>
+    <script src="js/CTA.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Nav -->
+    <div class="topnav" id="myTopnav">
+        
+        <a href="exhibition.html">Exhibition</a>
+        <a href="#contact">Contact</a>
+        <a href="#map">Map</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="#about">About</a>
+        <a href="index.html">Home</a>
+        
+        <div class="logo">
+            <a href="#"><img alt="logo" id="logoImage" src="img/header.png"></a>
+        </div>
+
+    </div>
+
+    <!-- JS for black background to appear in nav when you scroll -->
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $(".topnav");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+
+    <div class="container-landing" id="landing">
+        <img alt="brisbane" id="backgroundGif" src="img/background.gif">
+        <h2>Welcome to<br />100% Brisbane</h2>
+    </div>
+    <div class="container-about" id="about">
+        <div class="container">
+            <a id="about"></a>
+            <h1>About</h1>
+            <p>We are pulling back the layers of our city, going beneath the surface of high rises and the jacaranda trees to discover the very real heart of Brisbane’s story. You. Me. And everyone in between. People from all walks of life, beliefs and backgrounds. No two of us are the same, but when we connect we form a city, a community. Together we are Brisbane.
+                <br>
+                <br> 100% Brisbane is an exhibition like no other you’ve seen before. In an exciting world-first, Museum of Brisbane has collaborated with celebrated Berlin based theatre company Rimini Protokoll to create a powerful and unforgettable interactive exhibition experience which brings together 100 residents who currently call Brisbane home. Fascinating and deeply moving, their personal stories will be revealed alongside beliefs and attitudes that shape who we are, creating a real-time snapshot of our city.
+                <br>
+                <br> From the enduring culture of our Aboriginal community to the modern metropolis which continues to grow and change, 100% Brisbane puts our city under the microscope like never before. Take a journey from the past through to the present day in ‘A Brisbane Story’, a short film written and presented by acclaimed author and actor William McInnes. Throughout the exhibition you will discover first-hand accounts of people’s experiences of living in Brisbane, alongside some of our city’s most defining moments.
+                <br>
+                <br> This landmark exhibition also invites you to have your say and contribute to this incredible self-portrait of the city. 100% Brisbane will not only change the way you think about museums, it will change the way you think about Brisbane.</p>
+        </div>
+    </div>
+    <div class="container-CTA">
+        <!---subscribe call to action goes here-->
+        <div>
+            <h1><strong>Subscribe</strong> to our newsletter!</h1>
+            <form name="CTA">
+                <input type="email" name="email" pattern="[^ @]*@[^ @]*" placeholder="EMAIL ADDRESS" required>
+                <input type="submit" value="subscribe">
+            </form>
+
+        </div>
+    </div>
+    <div class="container-brisbaneDNA">
+        <div class="container">
+            <div id="quizPage1">
+                <h1>Brisbane <span id="DNA">DNA</span></h1>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <div id="quiz_btn">
+                    <button id="takeQuizBtn">Take the quiz</button>
+                </div>
+                <div id="quizPage2">
+                    <h1>Find Your <span style="font-weight: bold;" id="DNA">Fit</span></h1>
+                    <div id="quiz_choice">
+                        <div id="me">
+                            <h3>Me</h3>
+                            <a href="quiz-me.html">
+                                <div id="button_style">
+                                    <button id="start_btn">Start</button>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="my_life">
+                            <h3>My Life</h3>
+                            <div id="button_style">
+                                <button id="start_btn2">Start</button>
+                            </div>
+                        </div>
+                        <div id="my_world">
+                            <h3>Me and<br>
+				My World</h3>
+                            <div id="button_style1">
+                                <button id="start_btn3">Start</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- this is taken from https://www.w3schools.com/bootstrap/bootstrap_carousel.asp --!>
+    <div class="container-quote">
+        <br>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+        <div class="item active" style="background:#ffa9ba;">
+
+            <div class="carousel-caption">
+                <p>"The smell of Brisbane is flowers. It feels joyful. When I look out my window I see trees. It makes me happy."</p>
+                <h3>Bridgette 63%</h3>
+            </div>
+        </div>
+
+        <div class="item" style="background:#a9deff;">
+
+            <div class="carousel-caption">
+
+                <p>"When I look out my window I see the Hills Hoist moving... The smell of jacarandas at Christmas time makes me feel like a kid again."</p>
+                <h3>Liam 32%</h3>
+            </div>
+        </div>
+
+        <div class="item" style="background:#ffd4a9;">
+
+            <div class="carousel-caption">
+
+                <p>"I don't identify with people who don't think for themselves. It's not in my nature at all."</p>
+                <h3>Abdulaye 12%</h3>
+            </div>
+        </div>
+
+        <div class="item" style="background:#bda9ff;">
+
+            <div class="carousel-caption">
+
+                <p>"I've always been curious to see the world with my own eyes and I identify with international street food obsessive with international street food obsessives and curious travellers."</p>
+                <h3>Fiona 89%</h3>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    </div>
+    </div>
+    <div class="container-map">
+        <a id="map"></a>
+        <div class="container">
+            <!-- I think this link should be made into a button below the map because it's not obvious enough?-->
+            <h1><a href="exhibition.html">Map</a></h1>
+            <!--PLACEHOLDER DIV FOR MAP IMAGE-->
+            <div id="map">
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <!---CONTACT US WILL GO HERE-->
+        <div class="container-contact" id="contact">
+            <h1>Get In Touch</h1>
+            <div class="container-contactInformation">
+                <table>
+                    <tr>
+                        <td><img alt="phone" id="contactIMG" src="img/phone.svg"></td>
+                        <td><img alt="clock" id="contactIMG" src="img/clock.svg"></td>
+                        
+                    </tr>
+                    <tr>
+                        <td><a href="tel:3067-6770">+ (07) 3067 6770</a></td>
+                        <td>Daily 10am – 5pm</td>
+                        
+                    </tr>
+                    <tr>
+                        <td><img alt="mail" id="contactIMG" src="img/mail.svg"></td>
+                        <td><img alt="address" id="contactIMG" src="img/address.svg"></td>
+                        
+                    </tr>
+                    <tr>
+                        <td><a href="mailto:info@museumofbrisbane.com.au" target="_top">info@museumofbrisbane.com.au</a></td>
+                        <td>PO Box 12162, George Street, </br>Brisbane QLD 4003</td>
+                        
+                    </tr>
+                </table>
+            </div>
+            <form name "contactForm">
+                <div class="container-contactform">
+                    <input type="name" name="name" placeholder="NAME" onfocus="selectedElement('name');" onblur="deselectedElement('name');" required>
+                    <input type="email" name="email" pattern="[^ @]*@[^ @]*" placeholder="EMAIL ADDRESS" required>
+                    <textarea type="message" name="message" placeholder="MESSAGE" onfocus="selectedElement('message');" onblur="deselectedElement('message');" required></textarea>
+                    <input type="submit" value="submit">
+                </div>
+            </form>
+        </div>
+        <div>
+            <iframe width="100%" height="500px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4284.049145591813!2d153.0233871511362!3d-27.468202913458473!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8e6a99439997207!2sMuseum+of+Brisbane!5e0!3m2!1sen!2sau!4v1492841871240" style="-webkit-filter: grayscale(100%); filter: grayscale(100%);"></iframe>
+
+        </div>
+    </footer>
+</body>
+
+</html>

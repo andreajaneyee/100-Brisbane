@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<title>100% Brisbane - Quiz</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<form action="insert-quiz-me-results.php" id="meForm" method="post" name="meForm">
+		<!-- Question 1 -->
+		<div class="meQuestions" id="meQ1">
+		<div class="container">
+			<h2>What is your gender?</h2>
+			<ul>
+				<li><input class="meAnswersQ1" id="male" name="gender" type="radio" value="male"> <label for="male">Male</label></li>
+				<li><input class="meAnswersQ1" id="female" name="gender" type="radio" value="female"> <label for="female">Female</label></li>
+				<li><input class="meAnswersQ1" id="other" name="gender" type="radio" value="otherGender"> <label for="other">Other</label></li>
+			</ul>
+		</div><img class="answerBars" id="meAnswerBarQ1" src="img/answerBar.png"></div><!-- Question 2 -->
+		<div class="meQuestions" id="meQ2">
+		<div class="container">
+			<h2>How old are you?</h2>
+			<ul>
+				<li><input class="meAnswersQ2" form="meForm" id="0" name="age" type="radio" value="0-5"> <label for="0">0-5</label></li>
+				<li><input class="meAnswersQ2" form="meForm" id="6" name="age" type="radio" value="6-12"> <label for="6">6-12</label></li>
+				<li><input class="meAnswersQ2" form="meForm" id="13" name="age" type="radio" value="13-17"> <label for="13">13-17</label></li>
+				<li><input class="meAnswersQ2" form="meForm" id="18" name="age" type="radio" value="18-24"> <label for="18">18-24</label></li>
+				<li><input class="meAnswersQ2" form="meForm" id="25" name="age" type="radio" value="25-34"> <label for="25">25-34</label></li>
+				<li><input class="meAnswersQ2" form="meForm" id="35" name="age" type="radio" value="35-44"> <label for="35">35-44</label></li>
+				<li><input class="meAnswersQ2" form="meForm" id="45" name="age" type="radio" value="45-54"> <label for="45">45-54</label></li>
+				<li><input class="meAnswersQ2" form="meForm" id="55" name="age" type="radio" value="55-64"> <label for="55">55-64</label></li>
+				<li><input class="meAnswersQ2" form="meForm" id="65" name="age" type="radio" value="65+"> <label for="65">65+</label></li>
+			</ul>
+		</div><img class="answerBars" id="meAnswerBarQ2" src="img/answerBar.png"></div><!-- Question 3 -->
+		<div class="meQuestions" id="meQ3">
+		<div class="container">
+			<h2>Where do you live?</h2>
+			<ul>
+				<li><input class="meAnswersQ3" form="meForm" id="innerCity" name="live" type="radio" value="innerCity"> <label for="innerCity">Brisbane, Inner City</label></li>
+				<li><input class="meAnswersQ3" form="meForm" id="innerNorth" name="live" type="radio" value="innerNorth"> <label for="innerNorth">Brisbane, Inner North</label></li>
+				<li><input class="meAnswersQ3" form="meForm" id="innerSouth" name="live" type="radio" value="innerSouth"> <label for="innerSouth">Brisbane, Inner South</label></li>
+				<li><input class="meAnswersQ3" form="meForm" id="innerEast" name="live" type="radio" value="innerEast"> <label for="innerEast">Brisbane, Inner East and Eastern</label></li>
+				<li><input class="meAnswersQ3" form="meForm" id="innerWest" name="live" type="radio" value="innerWest"> <label for="innerWest">Brisbane, Inner West and Western</label></li>
+				<li><input class="meAnswersQ3" form="meForm" id="northEast" name="live" type="radio" value="northEast"> <label for="northEast">Brisbane, Northern and North-East</label></li>
+				<li><input class="meAnswersQ3" form="meForm" id="northWest" name="live" type="radio" value="northWest"> <label for="northWest">Brisbane, North-West</label></li>
+				<li><input class="meAnswersQ3" form="meForm" id="south" name="live" type="radio" value="south"> <label for="south">Brisbane, Southern</label></li>
+				<li><input class="meAnswersQ3" form="meForm" id="southEast" name="live" type="radio" value="southEast"> <label for="southEast">Brisbane, South-East</label></li>
+				<li><input class="meAnswersQ3" form="meForm" id="southWest" name="live" type="radio" value="southWest"> <label for="southWest">Brisbane, South-West</label></li>
+				<li><input class="meAnswersQ3" form="meForm" id="outerWest" name="live" type="radio" value="outerWest"> <label for="outerWest">Brisbane, Outer West</label></li>
+				<li><input class="meAnswersQ3" form="meForm" id="bayside" name="live" type="radio" value="bayside"> <label for="bayside">Brisbane, Bayside & Moreton Island</label></li>
+				<li><input class="meAnswersQ3" form="meForm" id="notBrisbane" name="live" type="radio" value="notBrisbane"> <label for="notBrisbane">Australia, but not Brisbane</label></li>
+				<li><input class="meAnswersQ3" form="meForm" id="overseas" name="live" type="radio" value="overseas"> <label for="overseas">Not Australia</label></li>
+			</ul>
+		</div><img class="answerBars" id="meAnswerBarQ3" src="img/answerBar.png"></div><!-- Question 4 -->
+		<div class="meQuestions" id="meQ4">
+		<div class="container">
+			<h2>Where where you born?</h2>
+			<ul>
+				<li><input class="meAnswersQ4" form="meForm" id="australia" name="born" type="radio" value="australia"> <label for="australia">Australia</label></li>
+				<li><input class="meAnswersQ4" form="meForm" id="pacific" name="born" type="radio" value="pacific"> <label for="pacific">Pacific</label></li>
+				<li><input class="meAnswersQ4" form="meForm" id="uk" name="born" type="radio" value="uk"> <label for="uk">UK & Ireland</label></li>
+				<li><input class="meAnswersQ4" form="meForm" id="europe" name="born" type="radio" value="europe"> <label for="europe">Mainland Europe</label></li>
+				<li><input class="meAnswersQ4" form="meForm" id="neAsia" name="born" type="radio" value="neAsia"> <label for="neAsia">North-East Asia</label></li>
+				<li><input class="meAnswersQ4" form="meForm" id="seAsia" name="born" type="radio" value="seAsia"> <label for="seAsia">South-East Asia</label></li>
+				<li><input class="meAnswersQ4" form="meForm" id="centralAsia" name="born" type="radio" value="centralAsia"> <label for="centralAsia">Southern & Central Asia</label></li>
+				<li><input class="meAnswersQ4" form="meForm" id="africa" name="born" type="radio" value="africa"> <label for="africa">Africa & Middle East</label></li>
+				<li><input class="meAnswersQ4" form="meForm" id="americas" name="born" type="radio" value="americas"> <label for="americas">Americas</label></li>
+			</ul>
+		</div><img class="answerBars" id="meAnswerBarQ4" src="img/answerBar.png"></div><!-- Question 5 -->
+		<div class="meQuestions" id="meQ5">
+			<div class="container">
+				<h2>What is your family composition in your current household?</h2>
+				<ul>
+					<li><input class="meAnswersQ5" form="meForm" id="noChildren" name="family" type="radio" value="noChildren"> <label for="noChildren">Couple with No Children</label></li>
+					<li><input class="meAnswersQ5" form="meForm" id="children" name="family" type="radio" value="children"> <label for="children">Couple with Children</label></li>
+					<li><input class="meAnswersQ5" form="meForm" id="oneParent" name="family" type="radio" value="oneParent"> <label for="oneParent">One Parent Family</label></li>
+					<li><input class="meAnswersQ5" form="meForm" id="single" name="family" type="radio" value="single"> <label for="single">Single</label></li>
+					<li><input class="meAnswersQ5" form="meForm" id="otherFamily" name="family" type="radio" value="otherFamily"> <label for="otherFamily">Other</label></li>
+				</ul>
+			</div>
+		<img class="answerBars" id="meAnswerBarQ5" src="img/answerBar.png">
+		</div>
+		<button id="meNext" type="button">Next</button>
+		<button id="meSubmit" type="submit">Submit</button>
+	</form>
+	<script src="js/jquery-3.2.0.min.js">
+	</script>
+	<script src="js/quiz-me.js">
+	</script>
+</body>
+</html>
