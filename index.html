@@ -12,6 +12,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/jquery-2.2.3.js"></script>
     <script src="js/quiz.js"></script>
+    <script src="js/quiz-me.js"></script>
+
+    <!-- pagination -->
+    <script src="js/dots.js"></script>
+    <script src="js/modernizr.min.js"></script>
 
 
     <title>100% Brisbane</title>
@@ -28,18 +33,44 @@
 
     <!-- Nav -->
     <div class="topnav" id="myTopnav">
-        
-        <a href="exhibition.html">Exhibition</a>
+
+        <div id="dropdownTest" class="dropdown">
+            <a href="exhibition.html">Exhibition</a>
+            <br>
+            <br>
+        </div>
         <a href="#contact">Contact</a>
         <a href="#map">Map</a>
         <a href="quiz.html">Quiz</a>
         <a href="#about">About</a>
         <a href="index.html">Home</a>
-        
+
         <div class="logo">
             <a href="#"><img alt="logo" id="logoImage" src="img/header.png"></a>
         </div>
 
+    </div>
+
+    <div class="dropdown-content" id="myDropdown">
+        <a href="exhibition.html#country">Country</a>
+        <br>
+        <br>
+        <a href="exhibition.html#birth">Birth</a>
+        <br>
+        <br>
+        <a href="exhibition.html#meanjin">Meanjin</a>
+        <br>
+        <br>
+        <a href="exhibition.html#tramdays">Trams</a>
+        <br>
+        <br>
+        <a href="exhibition.html#floods">Floods</a>
+        <br>
+        <br>
+        <a href="exhibition.html#place">Place</a>
+        <br>
+        <br>
+        <a href="exhibition.html#life">Life</a>
     </div>
 
     <!-- JS for black background to appear in nav when you scroll -->
@@ -52,52 +83,80 @@
         });
     </script>
 
+
     <div class="container-landing" id="landing">
         <img alt="brisbane" id="backgroundGif" src="img/background.gif">
-        <h2>Welcome to<br />100% Brisbane</h2>
-    </div>
-    <div class="container-about" id="about">
-        <div class="container">
-            <a id="about"></a>
-            <h1>About</h1>
-            <p>We are pulling back the layers of our city, going beneath the surface of high rises and the jacaranda trees to discover the very real heart of Brisbane’s story. You. Me. And everyone in between. People from all walks of life, beliefs and backgrounds. No two of us are the same, but when we connect we form a city, a community. Together we are Brisbane.
-                <br>
-                <br> 100% Brisbane is an exhibition like no other you’ve seen before. In an exciting world-first, Museum of Brisbane has collaborated with celebrated Berlin based theatre company Rimini Protokoll to create a powerful and unforgettable interactive exhibition experience which brings together 100 residents who currently call Brisbane home. Fascinating and deeply moving, their personal stories will be revealed alongside beliefs and attitudes that shape who we are, creating a real-time snapshot of our city.
-                <br>
-                <br> From the enduring culture of our Aboriginal community to the modern metropolis which continues to grow and change, 100% Brisbane puts our city under the microscope like never before. Take a journey from the past through to the present day in ‘A Brisbane Story’, a short film written and presented by acclaimed author and actor William McInnes. Throughout the exhibition you will discover first-hand accounts of people’s experiences of living in Brisbane, alongside some of our city’s most defining moments.
-                <br>
-                <br> This landmark exhibition also invites you to have your say and contribute to this incredible self-portrait of the city. 100% Brisbane will not only change the way you think about museums, it will change the way you think about Brisbane.</p>
-        </div>
-    </div>
-    <div class="container-CTA">
-        <!---subscribe call to action goes here-->
-        <div>
-            <h1><strong>Subscribe</strong> to our newsletter!</h1>
-            <form name="CTA">
-                <input type="email" name="email" pattern="[^ @]*@[^ @]*" placeholder="EMAIL ADDRESS" required>
-                <input type="submit" value="subscribe">
-            </form>
+
+        <div class="landing-text">
+
+            <h2>Welcome to<br/>100% Brisbane</h2>
+
+            <div class="landing-text" id="vertically-centered">
+                <div class="div-top">
+                </div>
+                <div class="div-centre">
+                    <h2>Welcome to<br/>100% Brisbane</h2>
+                </div>
+                <div class="div-bottom"></div>
+
+            </div>
 
         </div>
-    </div>
-    <div class="container-brisbaneDNA">
-        <div class="container">
-            <div id="quizPage1">
-                <h1>Brisbane <span id="DNA">DNA</span></h1>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                <div id="quiz_btn">
-                    <button id="takeQuizBtn">Take the quiz</button>
+        <div class="container-about" id="about">
+            <div class="container" id="vertically-centered" class="clearfix">
+                <div class="div-top">
+                </div>
+                <div class="about-centre">
+                    <h1 id="index-h1">About the exhibition</h1>
+                    <p id="tagline">Everyone of us has a story. Together, they tell the story of Brisbane.</p>
+                    <p>We are pulling back the layers of our city, going beneath the surface of high rises and the jacaranda trees to discover the very real heart of Brisbane’s story. You. Me. And everyone in between. People from all walks of life, beliefs and backgrounds. No two of us are the same, but when we connect we form a city, a community. Together we are Brisbane.
+                        <br>
+                        <br> 100% Brisbane is an exhibition like no other you’ve seen before. In an exciting world-first, Museum of Brisbane has collaborated with celebrated Berlin based theatre company Rimini Protokoll to create a powerful and unforgettable interactive exhibition experience which brings together 100 residents who currently call Brisbane home. Fascinating and deeply moving, their personal stories will be revealed alongside beliefs and attitudes that shape who we are, creating a real-time snapshot of our city.
+                        <br>
+
+                        <div class="video-container">
+                            <iframe  src="https://www.youtube.com/embed/6pbchVgQXYQ?rel=0&amp;controls=0&amp;showinfo=0" allowfullscreen="" frameborder="0"></iframe>
+
+                        </div>
+
+                </div>
+                <div class="div-bottom"></div>
+
+            </div>
+        </div>
+        <div class="container-CTA">
+            <!---subscribe call to action goes here-->
+            <div>
+                <h1><strong>Subscribe</strong> to our newsletter!</h1>
+                <form name="CTA">
+                    <input type="email" name="email" pattern="[^ @]*@[^ @]*" placeholder="EMAIL ADDRESS" required>
+                    <input type="submit" value="subscribe">
+                </form>
+
+            </div>
+        </div>
+        <div class="container-brisbaneDNA">
+            <div class="container">
+                <div id="quizPage1">
+                    <h1 id="index-h1">Brisbane <span id="DNA">DNA</span></h1>
+                    <p>Brisbane is a city of more than 1.1 million people, of whom 70% were born in Australia. But statistics can only reveal so much about us.
+                        <br>
+                        <br>Brisbane DNA takes you beyond the stereotypes and statistics to reveal the heart of modern Brisbane. The culmination of a world-first collaboration with Berlin-based theatre company Rimini Protokoll, this part of the exhibition it not to be missed.
+                        <br>
+                        <br>Explore the thoughts, opinions and life stories of 100 Brisbane residents through this ground-breaking exhibition that not only represents a demographic profile of our city but provides a dynamic picture into the heart and soul of who Brisbane is right now.</p>
+                    <div class="DNA-btn-container">
+                        <button class="DNA-btns" id="DNA-btn-1">Meet the 100</button>
+                        <button class="DNA-btns" id="DNA-btn-2">Take the quiz</button>
+                    </div>
                 </div>
                 <div id="quizPage2">
                     <h1>Find Your <span style="font-weight: bold;" id="DNA">Fit</span></h1>
                     <div id="quiz_choice">
                         <div id="me">
                             <h3>Me</h3>
-                            <a href="quiz-me.html">
-                                <div id="button_style">
-                                    <button id="start_btn">Start</button>
-                                </div>
-                            </a>
+                            <div id="button_style">
+                                <button id="start_btn">Start</button>
+                            </div>
                         </div>
                         <div id="my_life">
                             <h3>My Life</h3>
@@ -107,7 +166,7 @@
                         </div>
                         <div id="my_world">
                             <h3>Me and<br>
-				My World</h3>
+        				My World</h3>
                             <div id="button_style1">
                                 <button id="start_btn3">Start</button>
                             </div>
@@ -115,87 +174,285 @@
                     </div>
                 </div>
             </div>
+            <div id="quizMe-page">
+                <form action="insert-quiz-me-results.php" id="meForm" method="post" name="meForm">
+                    <!-- Question 1 -->
+                    <div class="meQuestions" id="meQ1">
+                        <div class="container">
+                            <h2>What is your gender?</h2>
+                            <ul>
+                                <li>
+                                    <input class="meAnswersQ1" id="male" name="gender" type="radio" value="male">
+                                    <label for="male">Male</label>
+                                </li>
+                                <li>
+                                    <input class="meAnswersQ1" id="female" name="gender" type="radio" value="female">
+                                    <label for="female">Female</label>
+                                </li>
+                                <li>
+                                    <input class="meAnswersQ1" id="other" name="gender" type="radio" value="otherGender">
+                                    <label for="other">Other</label>
+                                </li>
+                            </ul>
+                        </div><img class="answerBars" id="meAnswerBarQ1" src="img/answerBar.png"></div>
+                    <!-- Question 2 -->
+                    <div class="meQuestions" id="meQ2">
+                        <div class="container">
+                            <h2>How old are you?</h2>
+                            <ul>
+                                <li>
+                                    <input class="meAnswersQ2" form="meForm" id="0" name="age" type="radio" value="0-5">
+                                    <label for="0">0-5</label>
+                                </li>
+                                <li>
+                                    <input class="meAnswersQ2" form="meForm" id="6" name="age" type="radio" value="6-12">
+                                    <label for="6">6-12</label>
+                                </li>
+                                <li>
+                                    <input class="meAnswersQ2" form="meForm" id="13" name="age" type="radio" value="13-17">
+                                    <label for="13">13-17</label>
+                                </li>
+                                <li>
+                                    <input class="meAnswersQ2" form="meForm" id="18" name="age" type="radio" value="18-24">
+                                    <label for="18">18-24</label>
+                                </li>
+                                <li>
+                                    <input class="meAnswersQ2" form="meForm" id="25" name="age" type="radio" value="25-34">
+                                    <label for="25">25-34</label>
+                                </li>
+                                <li>
+                                    <input class="meAnswersQ2" form="meForm" id="35" name="age" type="radio" value="35-44">
+                                    <label for="35">35-44</label>
+                                </li>
+                                <li>
+                                    <input class="meAnswersQ2" form="meForm" id="45" name="age" type="radio" value="45-54">
+                                    <label for="45">45-54</label>
+                                </li>
+                                <li>
+                                    <input class="meAnswersQ2" form="meForm" id="55" name="age" type="radio" value="55-64">
+                                    <label for="55">55-64</label>
+                                </li>
+                                <li>
+                                    <input class="meAnswersQ2" form="meForm" id="65" name="age" type="radio" value="65+">
+                                    <label for="65">65+</label>
+                                </li>
+                            </ul>
+                        </div><img class="answerBars" id="meAnswerBarQ2" src="img/answerBar.png"></div>
+                    <!-- Question 3 -->
+                    <div class="meQuestions" id="meQ3">
+                        <div class="container">
+                            <h2>Where do you live?</h2>
+                            <ul>
+                                <li>
+                                    <input class="meAnswersQ3" form="meForm" id="innerCity" name="live" type="radio" value="innerCity">
+                                    <label for="innerCity">Brisbane, Inner City</label>
+                                </li>
+                                <li>
+                                    <input class="meAnswersQ3" form="meForm" id="innerNorth" name="live" type="radio" value="innerNorth">
+                                    <label for="innerNorth">Brisbane, Inner North</label>
+                                </li>
+                                <li>
+                                    <input class="meAnswersQ3" form="meForm" id="innerSouth" name="live" type="radio" value="innerSouth">
+                                    <label for="innerSouth">Brisbane, Inner South</label>
+                                </li>
+                                <li>
+                                    <input class="meAnswersQ3" form="meForm" id="innerEast" name="live" type="radio" value="innerEast">
+                                    <label for="innerEast">Brisbane, Inner East and Eastern</label>
+                                </li>
+                                <li>
+                                    <input class="meAnswersQ3" form="meForm" id="innerWest" name="live" type="radio" value="innerWest">
+                                    <label for="innerWest">Brisbane, Inner West and Western</label>
+                                </li>
+                                <li>
+                                    <input class="meAnswersQ3" form="meForm" id="northEast" name="live" type="radio" value="northEast">
+                                    <label for="northEast">Brisbane, Northern and North-East</label>
+                                </li>
+                                <li>
+                                    <input class="meAnswersQ3" form="meForm" id="northWest" name="live" type="radio" value="northWest">
+                                    <label for="northWest">Brisbane, North-West</label>
+                                </li>
+                                <li>
+                                    <input class="meAnswersQ3" form="meForm" id="south" name="live" type="radio" value="south">
+                                    <label for="south">Brisbane, Southern</label>
+                                </li>
+                                <li>
+                                    <input class="meAnswersQ3" form="meForm" id="southEast" name="live" type="radio" value="southEast">
+                                    <label for="southEast">Brisbane, South-East</label>
+                                </li>
+                                <li>
+                                    <input class="meAnswersQ3" form="meForm" id="southWest" name="live" type="radio" value="southWest">
+                                    <label for="southWest">Brisbane, South-West</label>
+                                </li>
+                                <li>
+                                    <input class="meAnswersQ3" form="meForm" id="outerWest" name="live" type="radio" value="outerWest">
+                                    <label for="outerWest">Brisbane, Outer West</label>
+                                </li>
+                                <li>
+                                    <input class="meAnswersQ3" form="meForm" id="bayside" name="live" type="radio" value="bayside">
+                                    <label for="bayside">Brisbane, Bayside & Moreton Island</label>
+                                </li>
+                                <li>
+                                    <input class="meAnswersQ3" form="meForm" id="notBrisbane" name="live" type="radio" value="notBrisbane">
+                                    <label for="notBrisbane">Australia, but not Brisbane</label>
+                                </li>
+                                <li>
+                                    <input class="meAnswersQ3" form="meForm" id="overseas" name="live" type="radio" value="overseas">
+                                    <label for="overseas">Not Australia</label>
+                                </li>
+                            </ul>
+                        </div><img class="answerBars" id="meAnswerBarQ3" src="img/answerBar.png"></div>
+                    <!-- Question 4 -->
+                    <div class="meQuestions" id="meQ4">
+                        <div class="container">
+                            <h2>Where where you born?</h2>
+                            <ul>
+                                <li>
+                                    <input class="meAnswersQ4" form="meForm" id="australia" name="born" type="radio" value="australia">
+                                    <label for="australia">Australia</label>
+                                </li>
+                                <li>
+                                    <input class="meAnswersQ4" form="meForm" id="pacific" name="born" type="radio" value="pacific">
+                                    <label for="pacific">Pacific</label>
+                                </li>
+                                <li>
+                                    <input class="meAnswersQ4" form="meForm" id="uk" name="born" type="radio" value="uk">
+                                    <label for="uk">UK & Ireland</label>
+                                </li>
+                                <li>
+                                    <input class="meAnswersQ4" form="meForm" id="europe" name="born" type="radio" value="europe">
+                                    <label for="europe">Mainland Europe</label>
+                                </li>
+                                <li>
+                                    <input class="meAnswersQ4" form="meForm" id="neAsia" name="born" type="radio" value="neAsia">
+                                    <label for="neAsia">North-East Asia</label>
+                                </li>
+                                <li>
+                                    <input class="meAnswersQ4" form="meForm" id="seAsia" name="born" type="radio" value="seAsia">
+                                    <label for="seAsia">South-East Asia</label>
+                                </li>
+                                <li>
+                                    <input class="meAnswersQ4" form="meForm" id="centralAsia" name="born" type="radio" value="centralAsia">
+                                    <label for="centralAsia">Southern & Central Asia</label>
+                                </li>
+                                <li>
+                                    <input class="meAnswersQ4" form="meForm" id="africa" name="born" type="radio" value="africa">
+                                    <label for="africa">Africa & Middle East</label>
+                                </li>
+                                <li>
+                                    <input class="meAnswersQ4" form="meForm" id="americas" name="born" type="radio" value="americas">
+                                    <label for="americas">Americas</label>
+                                </li>
+                            </ul>
+                        </div><img class="answerBars" id="meAnswerBarQ4" src="img/answerBar.png"></div>
+                    <!-- Question 5 -->
+                    <div class="meQuestions" id="meQ5">
+                        <div class="container">
+                            <h2>What is your family composition in your current household?</h2>
+                            <ul>
+                                <li>
+                                    <input class="meAnswersQ5" form="meForm" id="noChildren" name="family" type="radio" value="noChildren">
+                                    <label for="noChildren">Couple with No Children</label>
+                                </li>
+                                <li>
+                                    <input class="meAnswersQ5" form="meForm" id="children" name="family" type="radio" value="children">
+                                    <label for="children">Couple with Children</label>
+                                </li>
+                                <li>
+                                    <input class="meAnswersQ5" form="meForm" id="oneParent" name="family" type="radio" value="oneParent">
+                                    <label for="oneParent">One Parent Family</label>
+                                </li>
+                                <li>
+                                    <input class="meAnswersQ5" form="meForm" id="single" name="family" type="radio" value="single">
+                                    <label for="single">Single</label>
+                                </li>
+                                <li>
+                                    <input class="meAnswersQ5" form="meForm" id="otherFamily" name="family" type="radio" value="otherFamily">
+                                    <label for="otherFamily">Other</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <img class="answerBars" id="meAnswerBarQ5" src="img/answerBar.png">
+                    </div>
+                    <button id="meNext" type="button">Next</button>
+                    <button id="meSubmit" type="submit">Submit</button>
+                </form>
+            </div>
         </div>
     </div>
-
     <!-- this is taken from https://www.w3schools.com/bootstrap/bootstrap_carousel.asp --!>
     <div class="container-quote">
         <br>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
 
-        <div class="item active" style="background:#ffa9ba;">
+            <div class="item active" style="background:#ffb857;">
 
-            <div class="carousel-caption">
-                <p>"The smell of Brisbane is flowers. It feels joyful. When I look out my window I see trees. It makes me happy."</p>
-                <h3>Bridgette 63%</h3>
+                <div class="carousel-caption">
+                    <p>"The smell of Brisbane is flowers. It feels joyful. When I look out my window I see trees. It makes me happy."</p>
+                    <h3>Bridgette 63%</h3>
+                </div>
             </div>
+
+            <div class="item" style="background:#ff6e78;">
+
+                <div class="carousel-caption">
+
+                    <p>"When I look out my window I see the Hills Hoist moving... The smell of jacarandas at Christmas time makes me feel like a kid again."</p>
+                    <h3>Liam 32%</h3>
+                </div>
+            </div>
+
+            <div class="item" style="background:#8cd18d;">
+
+                <div class="carousel-caption">
+
+                    <p>"I don't identify with people who don't think for themselves. It's not in my nature at all."</p>
+                    <h3>Abdulaye 12%</h3>
+                </div>
+            </div>
+
+            <div class="item" style="background:#61cec2;">
+
+                <div class="carousel-caption">
+
+                    <p>"I've always been curious to see the world with my own eyes and I identify with international street food obsessive with international street food obsessives and curious travellers."</p>
+                    <h3>Fiona 89%</h3>
+                </div>
+            </div>
+
         </div>
 
-        <div class="item" style="background:#a9deff;">
-
-            <div class="carousel-caption">
-
-                <p>"When I look out my window I see the Hills Hoist moving... The smell of jacarandas at Christmas time makes me feel like a kid again."</p>
-                <h3>Liam 32%</h3>
-            </div>
-        </div>
-
-        <div class="item" style="background:#ffd4a9;">
-
-            <div class="carousel-caption">
-
-                <p>"I don't identify with people who don't think for themselves. It's not in my nature at all."</p>
-                <h3>Abdulaye 12%</h3>
-            </div>
-        </div>
-
-        <div class="item" style="background:#bda9ff;">
-
-            <div class="carousel-caption">
-
-                <p>"I've always been curious to see the world with my own eyes and I identify with international street food obsessive with international street food obsessives and curious travellers."</p>
-                <h3>Fiona 89%</h3>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
     </div>
     <div class="container-map">
         <a id="map"></a>
         <div class="container">
             <!-- I think this link should be made into a button below the map because it's not obvious enough?-->
-            <h1><a href="exhibition.html">Map</a></h1>
-            <!--PLACEHOLDER DIV FOR MAP IMAGE-->
+            <h1 id="index-h1"><a href="exhibition.html">Map</a></h1>
+            <img alt="map" id="map-image" src="img/map.png">
             <div id="map">
             </div>
         </div>
     </div>
-
-
-
     <footer>
-        <!---CONTACT US WILL GO HERE-->
         <div class="container-contact" id="contact">
             <h1>Get In Touch</h1>
             <div class="container-contactInformation">
@@ -203,22 +460,22 @@
                     <tr>
                         <td><img alt="phone" id="contactIMG" src="img/phone.svg"></td>
                         <td><img alt="clock" id="contactIMG" src="img/clock.svg"></td>
-                        
+
                     </tr>
                     <tr>
                         <td><a href="tel:3067-6770">+ (07) 3067 6770</a></td>
                         <td>Daily 10am – 5pm</td>
-                        
+
                     </tr>
                     <tr>
                         <td><img alt="mail" id="contactIMG" src="img/mail.svg"></td>
                         <td><img alt="address" id="contactIMG" src="img/address.svg"></td>
-                        
+
                     </tr>
                     <tr>
                         <td><a href="mailto:info@museumofbrisbane.com.au" target="_top">info@museumofbrisbane.com.au</a></td>
                         <td>PO Box 12162, George Street, </br>Brisbane QLD 4003</td>
-                        
+
                     </tr>
                 </table>
             </div>
