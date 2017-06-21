@@ -63,7 +63,7 @@ p {
 }
 
 #index-h1 {
-    padding: 0 0 3vh 0;
+    padding: 4vh 0 3vh 0;
     word-spacing: 1.2vh;
 }
 
@@ -224,7 +224,73 @@ input[type=submit]:hover {
     text-align: justify;
     color: black;
 }
-
+/*Meet the 100 page*/
+.dna-profiles{
+    margin: 5vh auto;
+    width:75%;
+    text-align: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.dna-profiles img{
+    width: 50px;
+    height: 50px;
+    margin: 4px;
+}
+#individual-profile{
+    display: flex;
+    justify-content: center;
+}
+.profile-container{
+    width: 80%;
+    margin: 0 auto;
+}
+.profile-container h1{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+#profile-toppane>h3{
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+#center-pane{
+    display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+    justify-content: space-between;
+}
+#profile-leftpane{
+    width:20%;
+}
+#profile-leftpane>img{
+    width:160px;
+    height: auto;
+}
+#profile-rightpane{
+    width:80%;
+    
+}
+#profile-rightpane>#top{
+    display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+    align-items: baseline;
+}
+#top{
+}
+#profile-rightpane p{
+    margin: 0;
+    padding: 0;
+    width: 100%; 
+}
 /*
 Map section styling
 */
@@ -261,18 +327,20 @@ Map section styling
     width: 100%;
 }
 
-.container-quote p {
+.carousel-caption p {
     font-size: 28px;
     font-style: italic;
     text-shadow: none;
 }
 
-.container-quote h3 {
+.carousel-caption h3 {
     text-transform: none;
     font-weight: bold;
     font-size: 20px;
     text-shadow: none;
 }
+
+
 
 .carousel-inner > .item > a > {
     width: 90%;
@@ -746,12 +814,9 @@ A day in the life of Brisbane styling
 
 
 /* TOP NAV STYLING - mostly from W3S*/
-
-#logoImage {
+.logo img {
     width: 100px;
-    float: left;
-    margin-left: -170%;
-    margin-top: -10px;
+    margin: 1vh 0 0 5vh;
 }
 
 .topnav {
@@ -784,6 +849,11 @@ A day in the life of Brisbane styling
 .topnav a:hover {
     background-color: #eb9c35;
     color: #e7e7e7;
+}
+
+#logoLink {
+    float:left;
+    padding:0px;
 }
 
 .topnav .icon {
